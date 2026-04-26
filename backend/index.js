@@ -1,10 +1,12 @@
 const express = require("express");
 const cors = require("cors");
-
+// require("dotenv").config();
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+const PORT = process.env.PORT || 5000;
 
 const user = {
   email: "test@gmail.com",
@@ -24,7 +26,7 @@ app.post("/login", (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("server started....");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
