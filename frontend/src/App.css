@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero-container {
+  height: 100vh;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.hero-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* slightly lighter */
+  z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 2;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* CENTER CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TEXT STYLING */
+.main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  max-width: 700px;
+}
+
+.sub-heading {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.desc {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+/* LOGIN FORM */
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.login-form input {
+  padding: 14px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-form button {
+  padding: 14px;
+  background: #e50914;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.login-form button:hover {
+  background: #f6121d;
+}
+
+/* ERROR */
+.error {
+  color: #ff4c4c;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .login-form {
+    width: 90%;
+  }
+}
+
+/* DASHBOARD */
+
+.dashboard-container {
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: black;
+  position: sticky;
+  top: 0;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
