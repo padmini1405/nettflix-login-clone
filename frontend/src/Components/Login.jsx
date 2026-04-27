@@ -45,7 +45,7 @@ function Login() {
             }}
         >
             <div className="navbar">
-                <h1 className="logo">NETFLIX</h1>
+                <h1 className="logo">NETTFLEX</h1>
             </div>
 
             <div className="hero-content">
