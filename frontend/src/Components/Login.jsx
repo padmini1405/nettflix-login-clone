@@ -58,7 +58,7 @@ function Login() {
                 </h3>
 
                 <p className="desc">
-                    Ready to watch? Enter your email and password to continue.
+                    Ready to watch? Enter your email and password to continue.<br></br>This is a netflix clone website.
                 </p>
 
                 <form className="login-form" onSubmit={handleSubmit}>
